@@ -5,3 +5,6 @@
 *.scss
 *.jpg
 *.png
+*.json
+
+/node_modules/*
