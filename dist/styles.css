@@ -70,8 +70,8 @@ footer {
 
 form {
   display: flex;
-  gap: 2.5rem;
-  padding: 0px 1rem;
+  flex-direction: column;
+  flex: 1;
   margin: 3vh 0;
 }
 form label {
@@ -94,6 +94,11 @@ form input:focus {
   border: 1px solid blue;
   box-shadow: -2px 2px 2px #9fa0a3;
 }
+form .inputs {
+  display: flex;
+  padding: 0 1rem;
+  gap: 1rem;
+}
 form .col {
   flex: 1;
   display: flex;
@@ -104,6 +109,12 @@ form .col {
 form .col div {
   display: flex;
   flex-direction: column;
+}
+
+.no-match::after {
+  color: red;
+  padding-left: 5px;
+  content: "Passwords do not match";
 }
 
 .account {
