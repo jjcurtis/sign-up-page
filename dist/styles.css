@@ -13,7 +13,7 @@ body {
 header,
 footer {
   background-color: black;
-  height: 2.5vh;
+  height: 7.5vh;
 }
 
 .leaves {
@@ -57,6 +57,7 @@ footer {
 }
 .main-content .message {
   padding: 0px 1rem;
+  margin-top: 3rem;
 }
 .main-content .message em {
   text-decoration: underline;
@@ -71,11 +72,27 @@ form {
   display: flex;
   gap: 2.5rem;
   padding: 0px 1rem;
+  margin: 3vh 0;
 }
 form label {
   text-transform: uppercase;
   font-size: 0.6rem;
   padding-bottom: 3px;
+}
+form input {
+  border: 1px solid #9fa0a3;
+  letter-spacing: 0.3px;
+}
+form input:not(:focus):invalid {
+  border: 1px solid red;
+}
+form input:valid {
+  border: 1px solid green;
+}
+form input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: -2px 2px 2px #9fa0a3;
 }
 form .col {
   flex: 1;
