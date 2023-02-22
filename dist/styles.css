@@ -16,8 +16,35 @@ footer {
   height: 2.5vh;
 }
 
+.leaves {
+  width: 100%;
+}
+
 .visuals {
+  display: flex;
   width: 35vw;
+  position: relative;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.452);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 0.5rem;
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  top: 20%;
+  background-position: 2vw;
+}
+.logo img {
+  width: 20%;
+}
+.logo p {
+  color: white;
+  font-size: 5vw;
 }
 
 .main-content {
@@ -76,6 +103,11 @@ form .col div {
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
+}
+.account a {
+  text-decoration: none;
+  color: rgb(74, 85, 47);
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
